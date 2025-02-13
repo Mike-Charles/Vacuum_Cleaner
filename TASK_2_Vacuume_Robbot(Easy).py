@@ -29,7 +29,6 @@ for _ in range(steps):
     
     if rooms[curreLocation] == 'Dirty':
         print(f"{curreLocation} is Dirty. Cleaning...")
-        time.sleep(cleanTime) 
         rooms[curreLocation] = 'Clean'
     else:
         print(f"{curreLocation} is already clean.")
@@ -50,8 +49,7 @@ for _ in range(steps):
     else:
         newLoca = roomkeys[0]  
     
-    print(f"Moving to {newLoca}...")
-    time.sleep(traveTime)  
+    print(f"Moving to {newLoca}...") 
     curreLocation = newLoca
     
     PrEnvironment()

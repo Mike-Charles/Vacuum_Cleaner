@@ -22,10 +22,15 @@ for _ in range(steps):
 
     print(f"Now checking {NewLocation}, It is {room[NewLocation]}")
     CurreLocation = NewLocation
-
-    print("Updated room state:", room)
+    print()
+    
+    for key, value in room.items():
+        print(key, ":", value)
     print("-" * 20)
+    print()
 
     if room['RoomA'] == "Clean" and room['RoomB'] == "Clean":
         print("All rooms are now clean!")
+        print()
+        print()
         break
